@@ -1,0 +1,53 @@
+.notification {
+  display: flex;
+  overflow-x: scroll;
+  white-space: nowrap;
+
+  &-item {
+    margin-right: 50px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    position: relative;
+    width: 125px;
+  }
+
+  &-icon {
+    color: darkblue;
+    font-size: 30px;
+
+    &-unfinished {
+      color: #aaa;
+    }
+  }
+
+  &-progress-bar {
+    width: 137px;
+    height: 2px;
+    background-color: #aaa;
+    position: absolute;
+    top: 15px;
+    left: 72px;
+
+    &-filled {
+      position: absolute;
+      width: 50%;
+      height: 2px;
+      background-color: darkblue;
+    }
+  }
+
+  &-days-to {
+    position: absolute;
+    top: 0;
+    right: -45px;
+  }
+
+  &-text {
+    margin: 8px 0;
+
+    span {
+      margin-right: 5px;
+    }
+  }
+}

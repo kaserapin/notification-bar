@@ -1,0 +1,46 @@
+.notification-item {
+  margin-right: 50px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  position: relative;
+  width: 125px;
+}
+
+.notification-icon {
+  color: #aaa;
+  font-size: 30px;
+
+  &-unfinished {
+    color: #aaa;
+  }
+}
+
+.notification-progress-bar {
+  width: 145px;
+  height: 2px;
+  background-color: #aaa;
+  position: absolute;
+  top: 15px;
+  right: -97px;
+
+  &-filled {
+    position: absolute;
+    height: 2px;
+    background-color: darkblue;
+  }
+}
+
+.notification-days-to {
+  position: absolute;
+  top: 0;
+  right: -45px;
+}
+
+.notification-text {
+  margin: 8px 0;
+
+  span {
+    margin-right: 5px;
+  }
+}

@@ -1,0 +1,24 @@
+<section class="notification-item">
+  <!--notification icon component  -->
+  <div class="notification-icon" [ngStyle]="{ color: iconColor }">
+    <fa-icon [icon]="getIcon()"></fa-icon>
+  </div>
+  <!-- notification text component -->
+  <div class="notification-text">
+    <span *ngIf="firstItem">Introduction</span>
+    <span *ngIf="lastItem">Hardlock note</span>
+    <span *ngIf="!firstItem && !lastItem">Reminder</span>
+    <fa-icon [icon]="faCircleInfo"></fa-icon>
+  </div>
+  <!-- notification date component -->
+  <div class="notification-date">{{ dateToShow }}</div>
+  <div *ngIf="!lastItem" class="notification-days-to">
+    {{ daysBetweenNotefications }} d.
+  </div>
+  <div *ngIf="!lastItem" class="notification-progress-bar">
+    <div
+      [ngStyle]="{ width: progressBarwidth }"
+      class="notification-progress-bar-filled"
+    ></div>
+  </div>
+</section>

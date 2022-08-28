@@ -1,0 +1,15 @@
+<main class="notification">
+  <app-notification-item
+    *ngFor="
+      let notification of company.notifications;
+      let first = first;
+      let last = last;
+      let i = index
+    "
+    [notification]="notification"
+    [firstItem]="first"
+    [lastItem]="last"
+    [previousNote]="company.notifications[i - 1]"
+    [nextNote]="company.notifications[i + 1]"
+  ></app-notification-item>
+</main>
