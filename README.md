@@ -1,5 +1,9 @@
 # NotificationBar
 
+## Creation of the project
+
+This project is created using json-server (https://github.com/typicode/json-server). It uses file in root folder called db.json where you can find what data was used. Using notificationService data is passed to notification-bar component and from there it is split to smaller components.
+
 This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 14.1.3.
 
 ## Development server
